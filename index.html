@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="formApp">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular-route.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body ng-controller="formController">
+    <form name="myForm">
+        <div id="fullWidth">
+            <label class="labelWidth" for="name">Name: </label>
+            <input class="controlWidth" name="nameText" type="text" ng-model="textname" required />
+        </div>
+        <div id="fullWidth">
+            <label class="labelWidth" for="email">Email: </label>
+            <input class="controlWidth" type="email" ng-model="email" required />
+        </div>
+        <div id="fullWidth">
+            <label class="labelWidth" for="textAnswer" style="vertical-align: middle;">Answer:  </label>
+            <textarea rows="5" name="textAnswer" style="vertical-align: middle;" class="controlWidth" required></textarea>
+        </div>
+        <div id="fullWidth">
+            <!--<hello></hello>-->
+            <directivecommunication directivename="Submit"></directivecommunication>
+             <directivecommunication directivename="Cancel"></directivecommunication>
+            <!--<input type="button" class="btnSubmit" value="Submit" ng-click="SubmitForm()" />-->
+            <!--<input type="button" class="btnCancel" value="Cancel" ng-click="CancelForm()" />-->
+        </div>
+
+    </form>
+
+</body>
+
+</html>

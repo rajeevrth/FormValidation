@@ -1,0 +1,38 @@
+#fullWidth{
+    margin-left : 25%; margin-right:25%; width: 100%;vertical-align: middle;    
+}
+.labelWidth {
+font-family: sans-serif;font-size: x-large;color: orangered;
+}
+.controlWidth {
+margin: 1%; padding : 1%;
+}
+
+.btnSubmit {
+padding: 1%; background-color: lightblue; color: white;font-size: larger; border-radius: 8%;
+}
+
+.btnSubmit:hover
+{
+    background-color: slategrey;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.btnCancel {
+padding: 1%; background-color:mediumpurple; color: white;font-size: larger;
+}
+
+.Erroroneous
+{
+    border-color:red;
+}
+
+@media screen and (max-width : 480px)
+{
+    body {
+        background-color: orange;
+    }
+    #fullWidth { 
+    margin-left : 25%;margin-right:25%;width: 100%;
+    }
+}
